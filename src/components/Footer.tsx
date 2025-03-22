@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Instagram } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -36,6 +37,17 @@ const Footer = () => {
                 info@janvoorendt.nl
               </a>
             </p>
+            <div className="flex items-center mt-3">
+              <a 
+                href="https://www.instagram.com/voorever.art" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center space-x-2 text-gray-600 hover:text-bronze transition-colors"
+              >
+                <Instagram size={18} />
+                <span>@voorever.art</span>
+              </a>
+            </div>
           </div>
         </div>
         
