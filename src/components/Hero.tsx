@@ -64,7 +64,7 @@ const Hero: React.FC<HeroProps> = ({
               className={`
                 inline-flex items-center px-7 py-3 rounded-full text-lg font-medium
                 transition-all transform hover:scale-105
-                ${image ? 'bg-white text-bronze-dark' : 'bg-bronze text-white hover:bg-bronze-dark'}
+                ${image ? 'bg-white/90 text-bronze-dark' : 'bg-bronze text-white hover:bg-bronze-dark'}
               `}
             >
               {ctaText}
@@ -79,8 +79,11 @@ const Hero: React.FC<HeroProps> = ({
               rel="noopener noreferrer"
               className={`
                 inline-flex items-center px-7 py-3 rounded-full text-lg font-medium
-                transition-all transform hover:scale-105
-                ${image ? 'border-2 border-white text-white hover:bg-white/10' : 'border-2 border-bronze text-bronze hover:bg-bronze/10'}
+                transition-all transform hover:scale-105 shadow-lg
+                ${image ? 
+                  'bg-gradient-to-r from-amber-500 to-amber-600 text-white border-0 hover:from-amber-600 hover:to-amber-700 hover:shadow-xl' : 
+                  'bg-gradient-to-r from-amber-500 to-amber-600 text-white border-0 hover:from-amber-600 hover:to-amber-700 hover:shadow-xl'}
+                ring-2 ring-amber-300 ring-opacity-40
               `}
             >
               {secondaryCtaText}
