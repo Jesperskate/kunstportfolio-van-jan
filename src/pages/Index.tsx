@@ -14,6 +14,8 @@ const Index = () => {
         subtitle="Bronzen beelden, buitenbeelden en schilderijen"
         ctaText="Bekijk de collectie"
         ctaLink="/bronzen-beelden"
+        secondaryCtaText="Bestellen"
+        secondaryCtaLink="https://www.smelik-stokking.nl/kunstenaar/jan-voorendt/"
         image="/lovable-uploads/276dbc22-5707-46e0-8738-fa5e73746a83.png"
         fullHeight={true}
       />

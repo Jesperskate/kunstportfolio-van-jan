@@ -1,13 +1,15 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, ExternalLink } from 'lucide-react';
 
 interface HeroProps {
   title: string;
   subtitle?: string;
   ctaText?: string;
   ctaLink?: string;
+  secondaryCtaText?: string;
+  secondaryCtaLink?: string;
   image?: string;
   fullHeight?: boolean;
 }
@@ -17,6 +19,8 @@ const Hero: React.FC<HeroProps> = ({
   subtitle, 
   ctaText, 
   ctaLink, 
+  secondaryCtaText,
+  secondaryCtaLink,
   image,
   fullHeight = false 
 }) => {
@@ -53,8 +57,8 @@ const Hero: React.FC<HeroProps> = ({
           </p>
         )}
         
-        {ctaText && ctaLink && (
-          <div className="animate-fade-up" style={{ animationDelay: '0.2s' }}>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up" style={{ animationDelay: '0.2s' }}>
+          {ctaText && ctaLink && (
             <Link
               to={ctaLink}
               className={`
@@ -66,8 +70,24 @@ const Hero: React.FC<HeroProps> = ({
               {ctaText}
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
-          </div>
-        )}
+          )}
+          
+          {secondaryCtaText && secondaryCtaLink && (
+            <a
+              href={secondaryCtaLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`
+                inline-flex items-center px-7 py-3 rounded-full text-lg font-medium
+                transition-all transform hover:scale-105
+                ${image ? 'border-2 border-white text-white hover:bg-white/10' : 'border-2 border-bronze text-bronze hover:bg-bronze/10'}
+              `}
+            >
+              {secondaryCtaText}
+              <ExternalLink className="ml-2 h-5 w-5" />
+            </a>
+          )}
+        </div>
       </div>
     </div>
   );
