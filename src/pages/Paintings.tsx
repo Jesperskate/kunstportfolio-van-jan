@@ -22,11 +22,16 @@ const Paintings = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed mb-8">
               In mijn schilderijen onderzoek ik de relatie tussen kleur, vorm en textuur. 
               De werken zijn veelal abstract, waarbij ik experimenteer met verschillende 
               technieken en materialen. Door laag over laag te werken ontstaat er een 
               diepte en rijkdom die uitnodigt tot langdurige contemplatie.
+            </p>
+            <p className="text-gray-600 leading-relaxed">
+              Mijn pallette is vaak warm en aards met een voorkeur voor roodtinten, goud en 
+              amber, af en toe gecontrasteerd met koelere accenten. Elk werk vertelt zijn 
+              eigen verhaal en nodigt de kijker uit om zijn eigen interpretatie te vinden.
             </p>
           </motion.div>
           

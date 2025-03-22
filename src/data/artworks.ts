@@ -130,6 +130,46 @@ export const paintings: Artwork[] = [
     year: "2021",
     dimensions: "100 x 120 cm",
     material: "Gemengde techniek op doek"
+  },
+  {
+    id: 13,
+    title: "Rode Cirkel met Turquoise",
+    category: "Schilderijen",
+    image: "/lovable-uploads/e055926d-7bbb-4d26-aa14-98e8deb4e377.png",
+    description: "Een intrigerend werk met een dominante rode achtergrond en een gouden cirkel die turquoise elementen omringt, wat zorgt voor een spannend kleurcontrast.",
+    year: "2022",
+    dimensions: "85 x 95 cm",
+    material: "Acryl en goudverf op doek"
+  },
+  {
+    id: 14,
+    title: "Oranje Golven",
+    category: "Schilderijen",
+    image: "/lovable-uploads/2ded79f1-ff42-43dd-9062-e7b3383d9ba0.png",
+    description: "Een levendig schilderij in warme oranje en gele tinten, met dynamische witte accenten die door het doek lijken te dansen. Gesigneerd met 'JJ Voorendt'.",
+    year: "2020",
+    dimensions: "90 x 110 cm",
+    material: "Olieverf op doek"
+  },
+  {
+    id: 15,
+    title: "Gouden Veld met Rode Accenten",
+    category: "Schilderijen",
+    image: "/lovable-uploads/43b65a18-5fc6-4bc7-8160-a200da56bd2e.png",
+    description: "Een warm compositie met een gouden achtergrond en een centrale rode band, verrijkt met donkere texturen en witte accenten.",
+    year: "2021",
+    dimensions: "85 x 100 cm",
+    material: "Gemengde techniek op doek"
+  },
+  {
+    id: 16,
+    title: "Tweeluik in Rood",
+    category: "Schilderijen",
+    image: "/lovable-uploads/2c949979-bd98-4c44-9549-e144e16f5719.png",
+    description: "Een minimalistisch tweeluik in verschillende tinten rood, gescheiden door een subtiele oranje lijn die de compositie een dramatische spanning geeft.",
+    year: "2022",
+    dimensions: "100 x 120 cm",
+    material: "Acryl op doek"
   }
 ];
 
