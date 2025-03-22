@@ -1,4 +1,3 @@
-
 import { Artwork } from '../components/ArtworkGrid';
 
 // Bronze sculptures
@@ -79,23 +78,13 @@ export const outdoorSculptures: Artwork[] = [
   },
   {
     id: 8,
-    title: "Abstracte Compositie voor Tuin",
+    title: "Vloeiende Golven",
     category: "Buitenbeelden",
-    image: "/lovable-uploads/39c2810c-0bf4-460b-92af-6e5650a6f396.png",
-    description: "Een abstracte sculptuur ontworpen voor buitenruimtes, gemaakt van materialen die de tand des tijds kunnen doorstaan.",
-    year: "2018",
-    dimensions: "180 x 90 x 90 cm",
-    material: "Cortenstaal en brons"
-  },
-  {
-    id: 9,
-    title: "Organische Vorm I",
-    category: "Buitenbeelden",
-    image: "/lovable-uploads/109b8975-9bfc-478c-bc33-5e8580282b1a.png",
-    description: "Een organisch gevormde buitensculptuur die speelt met negatieve ruimte en verhoudingen.",
-    year: "2020",
-    dimensions: "200 x 100 x 80 cm",
-    material: "Cortenstaal"
+    image: "/lovable-uploads/9c4ca3ff-451a-43f3-b00c-0a08b3344578.png",
+    description: "Een organische cortenstaalen sculptuur met vloeiende lijnen en een gouden accent. De golven in het metaal creëren een spel tussen licht en schaduw, terwijl de gouden opening een blik naar binnen biedt.",
+    year: "2022",
+    dimensions: "85 x 45 x 20 cm",
+    material: "Cortenstaal en goud"
   }
 ];
 
