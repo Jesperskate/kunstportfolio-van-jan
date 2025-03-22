@@ -1,0 +1,40 @@
+
+import React from 'react';
+import Layout from '../components/Layout';
+import Hero from '../components/Hero';
+import ArtworkGrid from '../components/ArtworkGrid';
+import { paintings } from '../data/artworks';
+import { motion } from 'framer-motion';
+
+const Paintings = () => {
+  return (
+    <Layout>
+      <Hero 
+        title="Schilderijen"
+        subtitle="Expressieve werken die kleur, textuur en emotie verkennen"
+      />
+      
+      <section className="py-12 md:py-16">
+        <div className="container mx-auto px-6">
+          <motion.div 
+            className="max-w-3xl mx-auto text-center mb-16"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            <p className="text-gray-600 leading-relaxed">
+              In mijn schilderijen onderzoek ik de relatie tussen kleur, vorm en textuur. 
+              De werken zijn veelal abstract, waarbij ik experimenteer met verschillende 
+              technieken en materialen. Door laag over laag te werken ontstaat er een 
+              diepte en rijkdom die uitnodigt tot langdurige contemplatie.
+            </p>
+          </motion.div>
+          
+          <ArtworkGrid artworks={paintings} />
+        </div>
+      </section>
+    </Layout>
+  );
+};
+
+export default Paintings;

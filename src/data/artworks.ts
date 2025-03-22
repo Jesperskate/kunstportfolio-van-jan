@@ -1,0 +1,141 @@
+
+import { Artwork } from '../components/ArtworkGrid';
+
+// Bronze sculptures
+export const bronzeSculptures: Artwork[] = [
+  {
+    id: 1,
+    title: "Giraffe met Vleugels",
+    category: "Bronzen Beelden",
+    image: "/lovable-uploads/dc34ed08-165c-479c-a148-41d98303749b.png",
+    description: "Een speelse interpretatie van een giraffe met vleugels, wat een gevoel van vrijheid en luchtigheid toevoegt aan dit elegante dier.",
+    year: "2018",
+    dimensions: "42 x 15 x 12 cm",
+    material: "Brons"
+  },
+  {
+    id: 2,
+    title: "Paard in Beweging",
+    category: "Bronzen Beelden",
+    image: "/lovable-uploads/33d9cfce-f2d9-46c6-9b89-c14f723744a9.png",
+    description: "Een dynamische weergave van een paard, vastgelegd in een moment van beweging en kracht.",
+    year: "2019",
+    dimensions: "30 x 20 x 10 cm",
+    material: "Brons"
+  },
+  {
+    id: 3,
+    title: "Neushoorn met Bandages",
+    category: "Bronzen Beelden",
+    image: "/lovable-uploads/ed78ce09-4d86-4e46-8b7b-0592ce5b09c9.png",
+    description: "Een neushoorn met bandages om zijn poten, wat een verhaal vertelt over kwetsbaarheid en kracht.",
+    year: "2020",
+    dimensions: "36 x 18 x 12 cm",
+    material: "Brons op granieten sokkel"
+  },
+  {
+    id: 4,
+    title: "Abstracte Figuur",
+    category: "Bronzen Beelden",
+    image: "/lovable-uploads/78f21907-716f-414b-a965-ec12d438dca6.png",
+    description: "Een abstracte sculptuur die speelt met vorm en beweging, waarbij de vloeiende vormen een gevoel van harmonie creëren.",
+    year: "2021",
+    dimensions: "45 x 20 x 15 cm",
+    material: "Brons, gepolijst"
+  },
+  {
+    id: 5,
+    title: "Stierenkop op Standaard",
+    category: "Bronzen Beelden",
+    image: "/lovable-uploads/36fd811d-e6f6-4f96-b8b0-95b3b1df4f94.png",
+    description: "Een krachtige stierenkop op een minimalistisch onderstel, symbool van kracht en vastberadenheid.",
+    year: "2019",
+    dimensions: "25 x 20 x 18 cm",
+    material: "Brons en metaal"
+  },
+  {
+    id: 6,
+    title: "Abstracte Figuur II",
+    category: "Bronzen Beelden",
+    image: "/lovable-uploads/468dc339-c92c-4d8a-88b7-a41e67953584.png",
+    description: "Een sierlijke, abstracte bronzen compositie die doet denken aan organische vormen in beweging.",
+    year: "2022",
+    dimensions: "50 x 22 x 15 cm",
+    material: "Brons"
+  }
+];
+
+// Outdoor sculptures
+export const outdoorSculptures: Artwork[] = [
+  {
+    id: 7,
+    title: "Boom des Levens",
+    category: "Buitenbeelden",
+    image: "/lovable-uploads/276dbc22-5707-46e0-8738-fa5e73746a83.png",
+    description: "Een indrukwekkende sculptuur van cortenstaal die de vorm aanneemt van een gestileerde boom. De puntige vertakkingen reiken naar de hemel, terwijl de stevige basis verankerd is in de aarde.",
+    year: "2017",
+    dimensions: "250 x 120 x 120 cm",
+    material: "Cortenstaal"
+  },
+  {
+    id: 8,
+    title: "Abstracte Compositie voor Tuin",
+    category: "Buitenbeelden",
+    image: "/lovable-uploads/39c2810c-0bf4-460b-92af-6e5650a6f396.png",
+    description: "Een abstracte sculptuur ontworpen voor buitenruimtes, gemaakt van materialen die de tand des tijds kunnen doorstaan.",
+    year: "2018",
+    dimensions: "180 x 90 x 90 cm",
+    material: "Cortenstaal en brons"
+  },
+  {
+    id: 9,
+    title: "Organische Vorm I",
+    category: "Buitenbeelden",
+    image: "/lovable-uploads/109b8975-9bfc-478c-bc33-5e8580282b1a.png",
+    description: "Een organisch gevormde buitensculptuur die speelt met negatieve ruimte en verhoudingen.",
+    year: "2020",
+    dimensions: "200 x 100 x 80 cm",
+    material: "Cortenstaal"
+  }
+];
+
+// Paintings
+export const paintings: Artwork[] = [
+  {
+    id: 10,
+    title: "Compositie in Rood",
+    category: "Schilderijen",
+    image: "/lovable-uploads/76a1aa44-79fe-4f5d-89e1-36f0b1d1c904.png",
+    description: "Een abstract schilderij gedomineerd door verschillende tinten rood, met subtiele geometrische vormen die uit de achtergrond tevoorschijn komen.",
+    year: "2019",
+    dimensions: "80 x 100 cm",
+    material: "Acryl op doek"
+  },
+  {
+    id: 11,
+    title: "Harmonie in Rood",
+    category: "Schilderijen",
+    image: "/lovable-uploads/9cefca89-d7ea-44d6-b045-a0102f0a7fa6.png",
+    description: "Een dynamisch schilderij met verschillende tinten rood, waarin horizontale en verticale lijnen een ritmische compositie vormen.",
+    year: "2020",
+    dimensions: "90 x 120 cm",
+    material: "Acryl en olie op doek"
+  },
+  {
+    id: 12,
+    title: "Abstracte Expressie",
+    category: "Schilderijen",
+    image: "/lovable-uploads/39c2810c-0bf4-460b-92af-6e5650a6f396.png",
+    description: "Een expressief werk vol beweging en contrasten, waar krachtige zwarte lijnen een dialoog aangaan met een levendige rode achtergrond.",
+    year: "2021",
+    dimensions: "100 x 120 cm",
+    material: "Gemengde techniek op doek"
+  }
+];
+
+// All artworks combined
+export const allArtworks: Artwork[] = [
+  ...bronzeSculptures,
+  ...outdoorSculptures,
+  ...paintings
+];
