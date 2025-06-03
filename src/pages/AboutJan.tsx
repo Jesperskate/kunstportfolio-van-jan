@@ -1,34 +1,27 @@
-
 import React from 'react';
 import Layout from '../components/Layout';
 import Hero from '../components/Hero';
 import { motion } from 'framer-motion';
-
 const AboutJan = () => {
-  return (
-    <Layout>
-      <Hero 
-        title="Over Jan"
-        subtitle="Kunstenaar, ontwerper en metaalbewerker"
-      />
+  return <Layout>
+      <Hero title="Over Jan" subtitle="Kunstenaar, ontwerper en metaalbewerker" />
       
       <section className="py-12 md:py-16">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <div className="flex flex-col md:flex-row gap-12 items-start">
-              <motion.div 
-                className="w-full md:w-1/3"
-                initial={{ opacity: 0, x: -50 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6 }}
-              >
+              <motion.div className="w-full md:w-1/3" initial={{
+              opacity: 0,
+              x: -50
+            }} animate={{
+              opacity: 1,
+              x: 0
+            }} transition={{
+              duration: 0.6
+            }}>
                 <div className="sticky top-24">
                   <div className="aspect-square overflow-hidden rounded-lg shadow-xl mb-6">
-                    <img 
-                      src="/lovable-uploads/d0504437-b665-4831-9260-602a5d9ced1c.png" 
-                      alt="Jan Voorendt in het groen" 
-                      className="w-full h-full object-cover"
-                    />
+                    <img src="/lovable-uploads/d0504437-b665-4831-9260-602a5d9ced1c.png" alt="Jan Voorendt in het groen" className="w-full h-full object-cover" />
                   </div>
                   
                   <div className="bg-cream p-6 rounded-lg">
@@ -48,21 +41,20 @@ const AboutJan = () => {
                 </div>
               </motion.div>
               
-              <motion.div 
-                className="w-full md:w-2/3"
-                initial={{ opacity: 0, y: 50 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-              >
+              <motion.div className="w-full md:w-2/3" initial={{
+              opacity: 0,
+              y: 50
+            }} animate={{
+              opacity: 1,
+              y: 0
+            }} transition={{
+              duration: 0.6,
+              delay: 0.2
+            }}>
                 <h2 className="text-3xl font-serif font-semibold text-bronze-dark mb-6">Biografie</h2>
                 
                 <div className="prose prose-lg max-w-none text-gray-600 space-y-6">
-                  <p>
-                    Jan Voorendt (1958) volgde kunstacademie in Tilburg en vakschool Schoonhoven edelsmeden. 
-                    Na deze opleidingen vele jaren gewerkt als management-adviseur. Naast dit werk altijd bezig 
-                    gebleven met schilderen, ontwerpen en metaalbewerking. Van klein naar groot, van goud en 
-                    zilver naar staal en brons.
-                  </p>
+                  <p>Jan Voorendt (1958) volgde kunstacademie in Tilburg (niet afgemaakt) en vakschool Schoonhoven edelsmeden. Daarna opleidingen gevolgd op het gebied van Human Resources en gewerkt als management adviseur. Naast dit werk altijd bezig gebleven met schilderen, ontwerpen en metaalbewerking. Van klein naar groot, van goud en zilver naar brons en cortenstaal.</p>
                   
                   <p>
                     De combinatie van zijn formele opleiding in kunst en edelsmeden, samen met zijn ervaring 
@@ -109,8 +101,6 @@ const AboutJan = () => {
           </div>
         </div>
       </section>
-    </Layout>
-  );
+    </Layout>;
 };
-
 export default AboutJan;
