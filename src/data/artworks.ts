@@ -33,16 +33,6 @@ export const bronzeSculptures: Artwork[] = [
     material: "Brons op granieten sokkel"
   },
   {
-    id: 4,
-    title: "Abstracte Figuur",
-    category: "Bronzen Beelden",
-    image: "/lovable-uploads/78f21907-716f-414b-a965-ec12d438dca6.png",
-    description: "Een abstracte sculptuur die speelt met vorm en beweging, waarbij de vloeiende vormen een gevoel van harmonie creëren.",
-    year: "2021",
-    dimensions: "45 x 20 x 15 cm",
-    material: "Brons, gepolijst"
-  },
-  {
     id: 5,
     title: "Stierenkop op Standaard",
     category: "Bronzen Beelden",
