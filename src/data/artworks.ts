@@ -14,20 +14,20 @@ export const bronzeSculptures: Artwork[] = [
   },
   {
     id: 2,
-    title: "Paard in Beweging",
+    title: "Paard in doodsstrijd",
     category: "Bronzen Beelden",
     image: "/lovable-uploads/33d9cfce-f2d9-46c6-9b89-c14f723744a9.png",
-    description: "Een dynamische weergave van een paard, vastgelegd in een moment van beweging en kracht.",
+    description: "Een dynamische weergave van een paard in doodsstrijd.",
     year: "2019",
     dimensions: "30 x 20 x 10 cm",
     material: "Brons"
   },
   {
     id: 3,
-    title: "Neushoorn met Bandages",
+    title: "Neushoorn op pumps",
     category: "Bronzen Beelden",
     image: "/lovable-uploads/ed78ce09-4d86-4e46-8b7b-0592ce5b09c9.png",
-    description: "Een neushoorn met bandages om zijn poten, wat een verhaal vertelt over kwetsbaarheid en kracht.",
+    description: "Neushoorn met lange poten in netstockings op pumps.",
     year: "2020",
     dimensions: "36 x 18 x 12 cm",
     material: "Brons op granieten sokkel"
