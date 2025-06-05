@@ -21,7 +21,7 @@ const AboutJan = () => {
             }}>
                 <div className="sticky top-24">
                   <div className="aspect-square overflow-hidden rounded-lg shadow-xl mb-6">
-                    <img src="/lovable-uploads/d0504437-b665-4831-9260-602a5d9ced1c.png" alt="Jan Voorendt in het groen" className="w-full h-full object-cover" />
+                    <img alt="Jan Voorendt in het groen" className="w-full h-full object-cover" src="/lovable-uploads/5692b2ed-11f5-4a0d-9eb2-8f008ab2b758.jpg" />
                   </div>
                   
                   <div className="bg-cream p-6 rounded-lg">
