@@ -33,8 +33,8 @@ const Footer = () => {
             <h3 className="text-xl font-serif font-semibold text-bronze-dark">Contact</h3>
             <p className="text-gray-600">Voor vragen over kunstwerken of opdrachten, neem gerust contact op.</p>
             <p className="text-gray-600">
-              <a href="mailto:info@janvoorendt.nl" className="hover:text-bronze transition-colors">
-                info@janvoorendt.nl
+              <a href="mailto:voorever12@gmail.com" className="hover:text-bronze transition-colors">
+                voorever12@gmail.com
               </a>
             </p>
             <div className="flex items-center mt-3">
