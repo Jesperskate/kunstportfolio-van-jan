@@ -3,12 +3,19 @@ import React from 'react';
 import Layout from '../components/Layout';
 import Hero from '../components/Hero';
 import ArtworkGrid from '../components/ArtworkGrid';
+import SEOHead from '../components/SEOHead';
 import { outdoorSculptures } from '../data/artworks';
 import { motion } from 'framer-motion';
 
 const OutdoorSculptures = () => {
   return (
     <Layout>
+      <SEOHead 
+        title="Buitenbeelden"
+        description="Buitensculpturen van Jan Voorendt in cortenstaal en brons. Sculpturen ontworpen voor tuin en landschap, duurzame kunstwerken voor buitenruimtes."
+        url="https://janvoorendt.nl/buitenbeelden"
+        keywords="buitenbeelden, tuinsculpturen, cortenstaal, buitenkunst, landschapskunst, Jan Voorendt, tuinontwerp"
+      />
       <Hero 
         title="Buitenbeelden"
         subtitle="Sculpturen die dialoog aangaan met de natuurlijke omgeving"

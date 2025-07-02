@@ -2,10 +2,17 @@ import React from 'react';
 import Layout from '../components/Layout';
 import Hero from '../components/Hero';
 import CategoryPreview from '../components/CategoryPreview';
+import SEOHead from '../components/SEOHead';
 import { bronzeSculptures, outdoorSculptures, paintings } from '../data/artworks';
 import { motion } from 'framer-motion';
 const Index = () => {
   return <Layout>
+      <SEOHead 
+        title="Jan Voorendt | Kunstenaar"
+        description="Portfolio van Jan Voorendt - Bronzen beelden, buitenbeelden en schilderijen. Ontdek unieke kunstwerken en sculpturen van Nederlandse kunstenaar en beeldhouwer Jan Voorendt."
+        url="https://janvoorendt.nl/"
+        keywords="Jan Voorendt, kunstenaar, bronzen beelden, buitenbeelden, schilderijen, sculpturen, Nederland, beeldhouwer, kunst, cortenstaal, metaalkunst"
+      />
       <Hero title="Jan Voorendt" subtitle="Bronzen beelden, buitenbeelden en schilderijen" ctaText="Bekijk de collectie" ctaLink="/bronzen-beelden" secondaryCtaText="Bestellen" secondaryCtaLink="https://www.smelik-stokking.nl/kunstenaar/jan-voorendt/" image="/lovable-uploads/276dbc22-5707-46e0-8738-fa5e73746a83.png" fullHeight={true} />
       
       <motion.section className="py-16 md:py-24 bg-cream" initial={{

@@ -1,9 +1,16 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import Hero from '../components/Hero';
+import SEOHead from '../components/SEOHead';
 import { motion } from 'framer-motion';
 const AboutJan = () => {
   return <Layout>
+      <SEOHead 
+        title="Over Jan Voorendt"
+        description="Biografie van kunstenaar Jan Voorendt (1958). Opleiding Kunstacademie Tilburg en Vakschool Schoonhoven. Gespecialiseerd in bronzen beelden, metaalbewerking en schilderkunst."
+        url="https://janvoorendt.nl/over-jan"
+        keywords="Jan Voorendt biografie, kunstenaar Nederland, Kunstacademie Tilburg, Vakschool Schoonhoven, edelsmeden, metaalbewerking"
+      />
       <Hero title="Over Jan" subtitle="Kunstenaar, ontwerper en metaalbewerker" />
       
       <section className="py-12 md:py-16">

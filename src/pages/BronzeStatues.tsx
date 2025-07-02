@@ -2,10 +2,17 @@ import React from 'react';
 import Layout from '../components/Layout';
 import Hero from '../components/Hero';
 import ArtworkGrid from '../components/ArtworkGrid';
+import SEOHead from '../components/SEOHead';
 import { bronzeSculptures } from '../data/artworks';
 import { motion } from 'framer-motion';
 const BronzeStatues = () => {
   return <Layout>
+      <SEOHead 
+        title="Bronzen Beelden"
+        description="Collectie bronzen beelden van Jan Voorendt. Unieke sculpturen en kunstwerken in brons, van realistische dierensculpturen tot abstracte vormen."
+        url="https://janvoorendt.nl/bronzen-beelden"
+        keywords="bronzen beelden, sculpturen, brons, Jan Voorendt, dierensculpturen, abstracte kunst, Nederlandse beeldhouwer"
+      />
       <Hero title="Bronzen Beelden" subtitle="Sculpturen die beweging en emotie vastleggen in tijdloos brons" />
       
       <section className="py-12 md:py-16">

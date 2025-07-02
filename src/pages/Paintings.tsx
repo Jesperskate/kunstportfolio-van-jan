@@ -3,12 +3,19 @@ import React from 'react';
 import Layout from '../components/Layout';
 import Hero from '../components/Hero';
 import ArtworkGrid from '../components/ArtworkGrid';
+import SEOHead from '../components/SEOHead';
 import { paintings } from '../data/artworks';
 import { motion } from 'framer-motion';
 
 const Paintings = () => {
   return (
     <Layout>
+      <SEOHead 
+        title="Schilderijen"
+        description="Abstracte schilderijen van Jan Voorendt. Expressieve kunstwerken met rijke kleuren en texturen, warme aardetinten en roodtinten."
+        url="https://janvoorendt.nl/schilderijen"
+        keywords="schilderijen, abstracte kunst, Jan Voorendt, expressieve kunst, Nederlandse schilder, moderne kunst, kleurrijke schilderijen"
+      />
       <Hero 
         title="Schilderijen"
         subtitle="Expressieve werken die kleur, textuur en emotie verkennen"
