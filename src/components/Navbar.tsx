@@ -75,37 +75,79 @@ const Navbar = () => {
         </div>
       </div>
       
-      {/* Mobile menu */}
+      {/* Mobile menu backdrop */}
+      {isOpen && (
+        <div 
+          className="md:hidden fixed inset-0 z-40 bg-black/50 backdrop-blur-sm animate-fade-in"
+          onClick={toggleMenu}
+        />
+      )}
+      
+      {/* Mobile menu sidebar */}
       <div 
         className={`
-          md:hidden fixed inset-0 z-50 bg-background shadow-lg
-          transform transition-transform duration-300 ease-in-out
+          md:hidden fixed top-0 right-0 h-full w-80 max-w-[85vw] z-50 
+          bg-white shadow-2xl transform transition-transform duration-300 ease-out
           ${isOpen ? 'translate-x-0' : 'translate-x-full'}
         `}
       >
-        <div className="flex justify-end p-6">
+        {/* Header */}
+        <div className="flex items-center justify-between p-6 border-b border-bronze/10">
+          <Link 
+            to="/" 
+            className="text-bronze-dark font-serif text-lg font-semibold"
+            onClick={() => setIsOpen(false)}
+          >
+            Jan Voorendt
+          </Link>
           <button 
-            className="text-gray-800 focus:outline-none" 
+            className="text-gray-600 hover:text-bronze transition-colors focus:outline-none" 
             onClick={toggleMenu}
             aria-label="Close menu"
           >
             <X size={24} />
           </button>
         </div>
-        <nav className="flex flex-col items-center justify-center h-full space-y-8">
-          {navLinks.map((link) => (
-            <Link
-              key={link.path}
-              to={link.path}
-              className={`nav-link text-xl font-serif tracking-wide transition-colors hover:text-bronze ${
-                isActive(link.path) ? 'text-bronze font-semibold' : 'text-gray-800'
-              }`}
-              onClick={() => setIsOpen(false)}
-            >
-              {link.name}
-            </Link>
-          ))}
+        
+        {/* Navigation */}
+        <nav className="p-6">
+          <div className="space-y-1">
+            {navLinks.map((link, index) => (
+              <Link
+                key={link.path}
+                to={link.path}
+                className={`
+                  block px-4 py-3 rounded-lg text-base font-medium tracking-wide 
+                  transition-all duration-200 hover:bg-bronze/5 hover:text-bronze
+                  ${isActive(link.path) 
+                    ? 'text-bronze bg-bronze/10 font-semibold' 
+                    : 'text-gray-700'
+                  }
+                `}
+                onClick={() => setIsOpen(false)}
+                style={{
+                  animationDelay: `${index * 50}ms`,
+                  animation: isOpen ? 'fade-in 0.3s ease-out forwards' : 'none'
+                }}
+              >
+                {link.name}
+              </Link>
+            ))}
+          </div>
         </nav>
+        
+        {/* Footer */}
+        <div className="absolute bottom-0 left-0 right-0 p-6 border-t border-bronze/10 bg-cream/50">
+          <div className="text-center">
+            <p className="text-sm text-gray-600 mb-2">Contact</p>
+            <a 
+              href="mailto:voorever12@gmail.com"
+              className="text-bronze hover:text-bronze-dark transition-colors text-sm"
+            >
+              voorever12@gmail.com
+            </a>
+          </div>
+        </div>
       </div>
     </header>
   );
