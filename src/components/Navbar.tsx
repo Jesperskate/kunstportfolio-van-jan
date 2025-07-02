@@ -75,14 +75,6 @@ const Navbar = () => {
         </div>
       </div>
       
-      {/* Mobile menu backdrop */}
-      {isOpen && (
-        <div 
-          className="md:hidden fixed inset-0 z-40 bg-black/50 backdrop-blur-sm animate-fade-in"
-          onClick={toggleMenu}
-        />
-      )}
-      
       {/* Mobile menu sidebar */}
       <div 
         className={`
