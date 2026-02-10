@@ -11,6 +11,7 @@ export interface Artwork {
   year?: string;
   dimensions?: string;
   material?: string;
+  isNew?: boolean;
 }
 
 interface ArtworkGridProps {
@@ -56,11 +57,16 @@ const ArtworkGrid: React.FC<ArtworkGridProps> = ({ artworks }) => {
         {artworks.map((artwork) => (
           <motion.div
             key={artwork.id}
-            className="artwork-item rounded-md shadow-md overflow-hidden bg-white"
+            className="artwork-item rounded-md shadow-md overflow-hidden bg-white relative"
             onClick={() => openModal(artwork)}
             variants={item}
             whileHover={{ y: -5 }}
           >
+            {artwork.isNew && (
+              <span className="absolute top-3 left-3 z-10 bg-bronze text-white text-xs font-semibold px-2.5 py-1 rounded-full shadow-md">
+                Nieuw
+              </span>
+            )}
             <img 
               src={artwork.image} 
               alt={artwork.title} 
