@@ -91,6 +91,22 @@ const Hero: React.FC<HeroProps> = ({
             </a>
           )}
         </div>
+
+        {/* New artworks banner */}
+        <div className="animate-fade-up mt-10" style={{ animationDelay: '0.4s' }}>
+          <a
+            href="#nieuw-werk"
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('nieuw-werk')?.scrollIntoView({ behavior: 'smooth' });
+            }}
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/15 backdrop-blur-md border border-white/30 text-white text-sm font-medium transition-all hover:bg-white/25 hover:border-white/50 group"
+          >
+            <span className="inline-block w-2 h-2 rounded-full bg-amber-400 animate-pulse" />
+            Ontdek nieuw werk 2026
+            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+          </a>
+        </div>
       </div>
     </div>
   );
