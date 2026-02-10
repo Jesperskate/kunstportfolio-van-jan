@@ -51,6 +51,17 @@ export const bronzeSculptures: Artwork[] = [
     year: "2022",
     dimensions: "50 x 22 x 15 cm",
     material: "Brons"
+  },
+  {
+    id: 17,
+    title: "Gouden Lint",
+    category: "Bronzen Beelden",
+    image: "/lovable-uploads/GoudenLint.jpeg",
+    description: "Een sierlijk slingerend lint in verguld brons dat als een danser naar boven reikt, geplaatst op een natuurstenen sokkel. De vloeiende beweging vangt licht en schaduw op een betoverende manier.",
+    year: "2026",
+    dimensions: "45 x 15 x 15 cm",
+    material: "Brons (verguld)",
+    isNew: true
   }
 ];
 
@@ -75,6 +86,72 @@ export const outdoorSculptures: Artwork[] = [
     year: "2022",
     dimensions: "85 x 45 x 20 cm",
     material: "Cortenstaal en goud"
+  },
+  {
+    id: 18,
+    title: "Sferische Harmonie",
+    category: "Buitenbeelden",
+    image: "/lovable-uploads/beeld-rond.jpeg",
+    description: "Een ronde sculptuur van gebogen RVS-banden die samen een open bolvorm creëren. Het spel van licht en reflecties maakt dit beeld bij elk perspectief anders.",
+    year: "2026",
+    dimensions: "80 x 80 x 80 cm",
+    material: "RVS",
+    isNew: true
+  },
+  {
+    id: 19,
+    title: "Oneindige Cirkel",
+    category: "Buitenbeelden",
+    image: "/lovable-uploads/Circel3.jpeg",
+    description: "Verweven cirkels van geborsteld RVS op een robuuste sokkel, een meditatie over verbondenheid en eindeloze beweging. De overlappende vormen suggereren een continue stroom.",
+    year: "2026",
+    dimensions: "100 x 60 x 40 cm",
+    material: "RVS op stalen sokkel",
+    isNew: true
+  },
+  {
+    id: 20,
+    title: "The World Is Falling Apart",
+    category: "Buitenbeelden",
+    image: "/lovable-uploads/TheWorldIsFallingApart2026.jpeg",
+    description: "Een monumentale bolvorm van uiteenvallende RVS-banden, een krachtig statement over fragiliteit en verandering. De opengebroken structuur symboliseert transformatie en kwetsbaarheid.",
+    year: "2026",
+    dimensions: "120 x 120 x 120 cm",
+    material: "RVS",
+    isNew: true
+  },
+  {
+    id: 21,
+    title: "Cortenstaal Boom II",
+    category: "Buitenbeelden",
+    image: "/lovable-uploads/Cosrenstaal-Boom.jpeg",
+    description: "Een gestileerde boom met scherpe, naar de hemel reikende takken, opgebouwd uit cortenstaal balken. De warme roestbruine tinten versterken de verbinding met de natuur.",
+    year: "2026",
+    dimensions: "280 x 150 x 150 cm",
+    material: "Cortenstaal",
+    isNew: true
+  },
+  {
+    id: 22,
+    title: "Geometrische Boom",
+    category: "Buitenbeelden",
+    image: "/lovable-uploads/geoboom.jpeg",
+    description: "Een dynamische boomvorm opgebouwd uit hoekige, geometrische segmenten in cortenstaal. De scherpe lijnen contrasteren met de organische boomvorm en creëren een spannende dialoog.",
+    year: "2026",
+    dimensions: "260 x 140 x 140 cm",
+    material: "Cortenstaal",
+    isNew: true
+  },
+  {
+    id: 23,
+    title: "Gestapelde Boom",
+    category: "Buitenbeelden",
+    image: "/lovable-uploads/laswerk-boom-2026.jpeg",
+    description: "Een organische boomvorm van gestapelde, gelaste cortenstaal platen die als schijven naar een punt toewerken. Het laswerk geeft het beeld een rauwe, ambachtelijke uitstraling.",
+    year: "2026",
+    dimensions: "200 x 100 x 100 cm",
+    material: "Cortenstaal (laswerk)",
+    isNew: true
   }
 ];
 
@@ -150,6 +227,12 @@ export const paintings: Artwork[] = [
     dimensions: "100 x 120 cm",
     material: "Acryl op doek"
   }
+];
+
+// New artworks for homepage highlighting
+export const newArtworks: Artwork[] = [
+  ...bronzeSculptures.filter(a => a.isNew),
+  ...outdoorSculptures.filter(a => a.isNew),
 ];
 
 // All artworks combined
