@@ -50,12 +50,12 @@ const Index = () => {
             <h2 className="text-3xl md:text-4xl font-serif font-semibold text-bronze-dark">Nieuw Werk</h2>
             <p className="text-gray-600 mt-4 max-w-2xl mx-auto">Ontdek mijn nieuwste creaties — verse sculpturen in RVS, cortenstaal en verguld brons.</p>
           </div>
-          <div className="max-h-[620px] overflow-y-auto pr-2" style={{ scrollbarWidth: 'thin' }}>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="overflow-x-auto pb-4" style={{ scrollbarWidth: 'thin' }}>
+            <div className="flex gap-6" style={{ minWidth: 'max-content' }}>
               {highlightedNew.map((artwork, index) => (
                 <motion.div
                   key={artwork.id}
-                  className="group relative rounded-lg overflow-hidden shadow-md cursor-pointer"
+                  className="group relative rounded-lg overflow-hidden shadow-md cursor-pointer w-[280px] flex-shrink-0"
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
