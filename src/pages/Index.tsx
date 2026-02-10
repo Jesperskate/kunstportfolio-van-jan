@@ -37,6 +37,7 @@ const Index = () => {
 
       {/* Nieuw Werk Section */}
       <motion.section 
+        id="nieuw-werk"
         className="py-16 md:py-24"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
