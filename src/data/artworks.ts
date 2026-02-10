@@ -89,7 +89,7 @@ export const outdoorSculptures: Artwork[] = [
   },
   {
     id: 18,
-    title: "Sferische Harmonie",
+    title: "The World Is Falling Apart I",
     category: "Buitenbeelden",
     image: "/lovable-uploads/beeld-rond.jpeg",
     description: "Een ronde sculptuur van gebogen RVS-banden die samen een open bolvorm creëren. Het spel van licht en reflecties maakt dit beeld bij elk perspectief anders.",
@@ -100,7 +100,7 @@ export const outdoorSculptures: Artwork[] = [
   },
   {
     id: 19,
-    title: "Oneindige Cirkel",
+    title: "The World Is Falling Apart II",
     category: "Buitenbeelden",
     image: "/lovable-uploads/Circel3.jpeg",
     description: "Verweven cirkels van geborsteld RVS op een robuuste sokkel, een meditatie over verbondenheid en eindeloze beweging. De overlappende vormen suggereren een continue stroom.",
@@ -111,7 +111,7 @@ export const outdoorSculptures: Artwork[] = [
   },
   {
     id: 20,
-    title: "The World Is Falling Apart",
+    title: "The World Is Falling Apart III",
     category: "Buitenbeelden",
     image: "/lovable-uploads/TheWorldIsFallingApart2026.jpeg",
     description: "Een monumentale bolvorm van uiteenvallende RVS-banden, een krachtig statement over fragiliteit en verandering. De opengebroken structuur symboliseert transformatie en kwetsbaarheid.",
