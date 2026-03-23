@@ -1,65 +1,43 @@
 
 
-# Add 8 New Artworks to the Site
+# Display Smelik & Stokking Gallery Artworks on JanVoorendt.nl
 
-## New Artworks Overview
+## What We Found
 
-Here are the 8 new artworks, categorized and named:
+The Smelik & Stokking gallery page lists **12+ artworks** by Jan Voorendt, including sculptures in bronze, cortenstaal, and RVS. Each artwork has a thumbnail and full-size image available.
 
-### Buitenbeelden (Outdoor Sculptures) - 6 new works
-
-| Image | Proposed Name | Material | Description |
-|-------|--------------|----------|-------------|
-| beeld-rond.jpeg | Sferische Harmonie | RVS | Ronde sculptuur van gebogen RVS-banden die een open bolvorm creeren, spelend met licht en ruimte. |
-| Circel3.jpeg | Oneindige Cirkel | RVS op stalen sokkel | Verweven cirkels van geborsteld RVS op een robuuste sokkel, een meditatie over verbondenheid en beweging. |
-| TheWorldIsFallingApart2026.jpeg | The World Is Falling Apart | RVS | Een monumentale bolvorm van uiteenvallende RVS-banden, een krachtig statement over fragiliteit en verandering. |
-| Cosrenstaal-Boom.jpeg | Cortenstaal Boom II | Cortenstaal | Een gestileerde boom met scherpe, naar de hemel reikende takken, opgebouwd uit cortenstaal balken. |
-| geoboom.jpeg | Geometrische Boom | Cortenstaal | Een dynamische boomvorm opgebouwd uit hoekige, geometrische segmenten in cortenstaal. |
-| laswerk-boom-2026.jpeg | Gestapelde Boom | Cortenstaal (laswerk) | Een organische boomvorm van gestapelde, gelaste cortenstaal platen die als schijven naar een punt toewerken. |
-
-### Bronzen Beelden (Bronze Sculptures) - 1 new work
-
-| Image | Proposed Name | Material | Description |
-|-------|--------------|----------|-------------|
-| GoudenLint.jpeg | Gouden Lint | Brons (verguld) | Een sierlijk slingerend lint in verguld brons dat als een danser naar boven reikt, geplaatst op een natuurstenen sokkel. |
-
-### Grouped Photo (not added as separate artwork)
-
-| Image | Treatment |
-|-------|-----------|
-| Beelden_laswerk_op_tafel.jpeg | Shows multiple welded tree sculptures together on a table. Since individual versions are already covered by "Gestapelde Boom", this photo will be added as a secondary/group shot alongside the outdoor sculptures section. |
+Artworks found:
+- Boom (Brons, 40x30x30 cm)
+- The World is Changing I, II, III (RVS)
+- Cubism I, II, IV, V (Cortenstaal)
+- Knotwilg, Boom met vogels, Boom met boomklever en specht
+- Baobab, Dansende boom, Boompje, Goudvinken, Treurwilg met schaapjes
 
 ## Implementation Steps
 
-### 1. Copy all 8 images to the public folder
-Copy each uploaded image to `public/lovable-uploads/` so they can be referenced in the artwork data.
+### 1. Download all artwork images
+Run a script to fetch each full-size image from `smelik-stokking.nl` and save them to `public/lovable-uploads/smelik-stokking/`. The URL pattern is:
+`https://www.smelik-stokking.nl/static/img/kunstwerken/{ID}/large-foto_1_{ID}.jpg`
 
-### 2. Update `src/data/artworks.ts`
-- Add 6 new entries to the `outdoorSculptures` array
-- Add 1 new entry to the `bronzeSculptures` array
-- Each entry includes: id, title, category, image path, description, year (2026 for new works), dimensions (estimated), and material
-- Mark new artworks with a `isNew: true` flag
+We'll also scrape each detail page to capture material, dimensions, and price info.
 
-### 3. Update `src/components/ArtworkGrid.tsx`
-- Add `isNew` as an optional field to the `Artwork` interface
-- Display a small "Nieuw" badge on artwork cards that have `isNew: true`
+### 2. Create gallery data file
+Add a new data file `src/data/smelikArtworks.ts` containing all scraped artworks with title, image path, material, dimensions, and description sourced from the gallery.
 
-### 4. Update `src/pages/Index.tsx` - New Artworks Section
-- Add a new "Nieuw Werk" section on the homepage between the welcome text and the category previews
-- Show a curated grid of the new artworks (3-4 highlighted pieces) with "Nieuw" badges
-- Link each to its respective category page
+### 3. Create new "Galerie" page
+Build `src/pages/GalerieSmelik.tsx` — a new page titled "Te Koop bij Smelik & Stokking" that:
+- Uses the existing `Layout` and `ArtworkGrid` components
+- Displays all gallery artworks in the familiar grid style
+- Includes a link/credit to the Smelik & Stokking website
+- Shows price and material info in the artwork modal
 
-### Technical Details
+### 4. Add route and navigation
+- Add route `/galerie-smelik-stokking` in `App.tsx`
+- Add a navigation link in `Navbar.tsx`
 
-**Artwork interface change:**
-```typescript
-export interface Artwork {
-  // existing fields...
-  isNew?: boolean;
-}
-```
+## Technical Details
 
-**New homepage section:** A horizontally scrollable or grid section titled "Nieuw Werk" featuring select new pieces, styled consistently with the existing warm bronze/cream aesthetic.
-
-**ID numbering:** New artworks will use IDs starting from 17 (continuing from the last existing ID of 16).
+- Images are downloaded at build time and stored locally — no runtime dependency on the external site
+- Reuses existing `Artwork` interface and `ArtworkGrid` component
+- The page will include a prominent link to the Smelik & Stokking website for purchasing
 
