@@ -12,6 +12,7 @@ import OutdoorSculptures from "./pages/OutdoorSculptures";
 import Paintings from "./pages/Paintings";
 import AboutJan from "./pages/AboutJan";
 import GalerieSmelik from "./pages/GalerieSmelik";
+import FlyerPDF from "./pages/FlyerPDF";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -29,6 +30,7 @@ const App = () => (
           <Route path="/schilderijen" element={<Paintings />} />
           <Route path="/over-jan" element={<AboutJan />} />
           <Route path="/galerie-smelik-stokking" element={<GalerieSmelik />} />
+          <Route path="/pdf-a5" element={<FlyerPDF />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
