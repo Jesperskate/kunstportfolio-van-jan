@@ -79,6 +79,13 @@ const Navbar = () => {
       {/* Mobile menu sidebar */}
       <div 
         className={`
+          md:hidden fixed inset-0 z-40 bg-black/50 transition-opacity duration-300
+          ${isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}
+        `}
+        onClick={() => setIsOpen(false)}
+      />
+      <div 
+        className={`
           md:hidden fixed top-0 right-0 h-full w-80 max-w-[85vw] z-50 
           bg-white shadow-2xl transform transition-transform duration-300 ease-out
           ${isOpen ? 'translate-x-0' : 'translate-x-full'}
