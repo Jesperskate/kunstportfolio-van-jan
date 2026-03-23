@@ -35,6 +35,7 @@ const Navbar = () => {
     { name: 'Buitenbeelden', path: '/buitenbeelden' },
     { name: 'Schilderijen', path: '/schilderijen' },
     { name: 'Over Jan', path: '/over-jan' },
+    { name: 'Galerie', path: '/galerie-smelik-stokking' },
   ];
 
   return (
