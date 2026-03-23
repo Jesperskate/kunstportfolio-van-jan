@@ -126,6 +126,12 @@ const ArtworkGrid: React.FC<ArtworkGridProps> = ({ artworks }) => {
                       <span className="font-medium">Afmetingen:</span> {selectedArtwork.dimensions}
                     </p>
                   )}
+
+                  {(selectedArtwork as any).price && (
+                    <p className="text-sm text-gray-600">
+                      <span className="font-medium">Prijs:</span> {(selectedArtwork as any).price}
+                    </p>
+                  )}
                   
                   <p className="text-sm text-gray-600">
                     <span className="font-medium">Categorie:</span> {selectedArtwork.category}
