@@ -12,6 +12,8 @@ export interface Artwork {
   dimensions?: string;
   material?: string;
   isNew?: boolean;
+  price?: string;
+  galleryUrl?: string;
 }
 
 interface ArtworkGridProps {
