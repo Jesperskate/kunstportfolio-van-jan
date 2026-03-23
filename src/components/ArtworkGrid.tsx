@@ -138,6 +138,16 @@ const ArtworkGrid: React.FC<ArtworkGridProps> = ({ artworks }) => {
                   </p>
                 </div>
                 
+                {(selectedArtwork as any).galleryUrl && (
+                  <a 
+                    href={(selectedArtwork as any).galleryUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-8 inline-block bg-bronze text-white px-5 py-2 rounded-full hover:bg-bronze-dark transition-colors mr-3"
+                  >
+                    Bekijk in Galerie
+                  </a>
+                )}
                 <button 
                   className="mt-8 bg-bronze text-white px-5 py-2 rounded-full hover:bg-bronze-dark transition-colors"
                   onClick={closeModal}
