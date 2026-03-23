@@ -30,6 +30,7 @@ const App = () => (
           <Route path="/schilderijen" element={<Paintings />} />
           <Route path="/over-jan" element={<AboutJan />} />
           <Route path="/galerie-smelik-stokking" element={<GalerieSmelik />} />
+          <Route path="/pdf-a5" element={<FlyerPDF />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
