@@ -11,6 +11,7 @@ import BronzeStatues from "./pages/BronzeStatues";
 import OutdoorSculptures from "./pages/OutdoorSculptures";
 import Paintings from "./pages/Paintings";
 import AboutJan from "./pages/AboutJan";
+import GalerieSmelik from "./pages/GalerieSmelik";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
