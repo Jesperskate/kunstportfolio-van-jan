@@ -11,6 +11,7 @@ import BronzeStatues from "./pages/BronzeStatues";
 import OutdoorSculptures from "./pages/OutdoorSculptures";
 import Paintings from "./pages/Paintings";
 import AboutJan from "./pages/AboutJan";
+import GalerieSmelik from "./pages/GalerieSmelik";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/buitenbeelden" element={<OutdoorSculptures />} />
           <Route path="/schilderijen" element={<Paintings />} />
           <Route path="/over-jan" element={<AboutJan />} />
+          <Route path="/galerie-smelik-stokking" element={<GalerieSmelik />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

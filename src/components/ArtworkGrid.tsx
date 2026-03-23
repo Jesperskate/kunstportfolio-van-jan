@@ -12,6 +12,8 @@ export interface Artwork {
   dimensions?: string;
   material?: string;
   isNew?: boolean;
+  price?: string;
+  galleryUrl?: string;
 }
 
 interface ArtworkGridProps {
@@ -124,12 +126,28 @@ const ArtworkGrid: React.FC<ArtworkGridProps> = ({ artworks }) => {
                       <span className="font-medium">Afmetingen:</span> {selectedArtwork.dimensions}
                     </p>
                   )}
+
+                  {(selectedArtwork as any).price && (
+                    <p className="text-sm text-gray-600">
+                      <span className="font-medium">Prijs:</span> {(selectedArtwork as any).price}
+                    </p>
+                  )}
                   
                   <p className="text-sm text-gray-600">
                     <span className="font-medium">Categorie:</span> {selectedArtwork.category}
                   </p>
                 </div>
                 
+                {(selectedArtwork as any).galleryUrl && (
+                  <a 
+                    href={(selectedArtwork as any).galleryUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-8 inline-block bg-bronze text-white px-5 py-2 rounded-full hover:bg-bronze-dark transition-colors mr-3"
+                  >
+                    Bekijk in Galerie
+                  </a>
+                )}
                 <button 
                   className="mt-8 bg-bronze text-white px-5 py-2 rounded-full hover:bg-bronze-dark transition-colors"
                   onClick={closeModal}
